@@ -2,10 +2,7 @@ import 'dart:math';
 
 // 数字、集合、字符串等（https://dart.cn/guides/libraries/library-tour#dartcore---numbers-collections-strings-and-more）
 void dartcore_numbers_numbers_collections_strings_and_more() {
-  print('\n');
-  print('#' * 40);
-  print('数字、集合、字符串等');
-  print('#' * 40);
+  print("===========数字、集合、字符串等========");
 
   assert(int.parse('42') == 42);
   assert(int.parse('0x42') == 66);
