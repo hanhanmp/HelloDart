@@ -1,12 +1,14 @@
+// 命令行程序 （https://dart.dev/tutorials/server/cmdline）
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:args/args.dart';
+import 'package:args/args.dart';// 使用其中两个类ArgParser和ArgResults
 
 const lineNumber = 'line-number';
 
 void main(List<String> arguments) {
   exitCode = 0; // presume success
+  // 创建ArgParser的实例，同时指定需要输入的参数
   final parser = ArgParser()..addFlag(lineNumber, negatable: false, abbr: 'n');
 
   ArgResults argResults = parser.parse(arguments);
